@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let amount = prompt("Enter the amount :")
+
+        if (amount >= 100 && amount <= 200) {
+            document.write("5% discount");
+        } else if (amount >= 400 && amount <= 600) {
+            document.write("7% discount");
+        } else if (amount >= 800 && amount <= 1000) {
+            document.write("10% discount");
+        } else if (amount >= 2000 && amount <= 5000) {
+            document.write("20% discount");
+        } else if (amount > 5000) {
+            document.write("25% discount");
+        } else {
+            document.write("no discount");
+        }
+    </script>
+</body>
+</html>
