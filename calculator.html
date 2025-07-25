@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+
+        function add(a,b){
+            return a+b;
+        }
+
+        function sub(a,b){
+            return a-b;
+        }
+
+        function multi(a,b){
+            return a*b;
+        }
+
+        function divi(a,b){
+            return a/b;
+        }
+
+        function mod(a,b){
+            return a%b;
+        }
+
+
+
+        let ex = prompt("Enter the number 1.add,2.subraction,3.Multiplication,4.division :")
+
+        let a=prompt("Enter the first number");
+        let b=prompt("Enter the second number")
+
+        switch(ex){
+            case "1":
+                   document.writeln(add(Number(a),Number(b)))
+                   break;
+            case "2":
+                   document.writeln(sub(a,b))
+                   break;
+            case "3":
+                   document.writeln(multi(a,b))
+                   break;
+            case "4":
+                   document.writeln(divi(a,b))
+                   break;
+             case "5":
+                   document.writeln(mod(a,b))
+                   break;
+            default:
+                    document.writeln("Invalid Number")
+        }
+    </script>
+</body>
+</html>

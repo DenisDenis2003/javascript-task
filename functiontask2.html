@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function exp1(x,y){
+            let ans = (x**2)+(y**2)+(x*y)
+            return ans
+        }
+
+        function patten(){
+                for(let i=1;i<=5;i++){
+                for(let j=1;j<=i;j++){
+                    document.writeln("*")
+                }
+                document.writeln("<br>")
+            }
+        }
+
+         function exp2(l,b,h){
+            let ans = l*b*h
+            return ans
+        }
+
+         function exp3(x1,y1){
+            let ans = (x1+y1)*(x1-y1)
+            return ans
+        }
+
+
+        let ex=prompt("Enter the value 1.Exp1 2.pattern 3.exp2 4.exp3")
+
+        switch(ex){
+            case "1":
+                let x=Number(prompt("Enter the value x:"));
+                let y=Number(prompt("Enter the value y:"));
+                document.writeln(exp1(x,y));
+                break;
+            case "2":
+                patten()
+                break;
+            case "3":
+                 let l=Number(prompt("Enter the value x:"));
+                let b=Number(prompt("Enter the value y:"));
+                let h=Number(prompt("Enter the value y:"));
+                document.writeln(exp2(l,b,h))
+                break;
+             case "4":
+                let x1=Number(prompt("Enter the value x:"));
+                let y1=Number(prompt("Enter the value y:"));
+                document.writeln(exp3(x1,y1));
+                break;
+            default:
+               document.writeln("Invalid Input")
+        }
+
+
+    </script>
+</body>
+</html>
