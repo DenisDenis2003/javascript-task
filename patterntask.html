@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let c=1;
+        // for(let i=1;i<=5;i++){
+        //     for(let j=1;j<=i;j++){
+        //         if(j%2==1){
+        //             document.writeln("1")
+        //         }else{
+        //             document.writeln("0")
+        //         }
+        //     }
+          
+        //     document.writeln("<br>")
+        // }
+
+
+
+
+        // let c=1;
+        // let k=1
+        // for(let i=1;i<=5;i++){
+        //     for(let j=1;j<=5;j++){
+        //         document.writeln(c);
+        //         k++;
+        //         c=c+k
+        //     }
+        //     c=1
+        //     k=1
+        //     document.writeln("<br>")
+        // }
+
+
+        // let c=1;
+        // for(let i=1;i<=5;i++){
+        //     for(let j=1;j<=i;j++){
+        //         document.writeln(c)
+        //         c++;
+        //     }
+        //     document.writeln("<br>")
+        // }
+
+        // let f=4;
+        // let s=1;
+        // for(let i=1;i<=5;i++){
+        //     for(let j=1;j<=f;j++){
+        //        document.writeln("&nbsp;&nbsp;") 
+        //     }
+        //     for(let j=1;j<=s;j++){
+                
+
+        //         document.writeln("*")
+        //     }
+        //     f--;
+        //     s+=2;
+        //     document.writeln("<br>")
+           
+        // }
+
+        // let c=15;
+        // let a=1;
+        // for(let i=1;i<=6;i++){
+        //     document.writeln(c);
+        //     c=c-a
+        //     a++;
+        // }
+
+        // for(let i=1;i<=5;i++){
+        //     for(let j=1;j<=5;j++){
+        //         if(i==2 && j>=2){
+        //         document.writeln("&nbsp;")
+        //         }else if(i==4 && j<=4){
+        //             document.writeln("&nbsp;&nbsp;")
+        //         }
+        //         else{
+        //             document.writeln("*")
+        //         }
+        //     }
+            
+        //     document.writeln("<br>")
+        // }
+
+
+
+        function one(){
+                let c=1;
+                for(let i=1;i<=5;i++){
+                    for(let j=1;j<=i;j++){
+                        if(j%2==1){
+                            document.writeln("1")
+                        }else{
+                            document.writeln("0")
+                        }
+                    }
+                
+                    document.writeln("<br>")
+                }
+
+        }
+
+
+
+        function two(){
+            let c=1;
+            let k=1
+            for(let i=1;i<=5;i++){
+                for(let j=1;j<=5;j++){
+                    document.writeln(c);
+                    k++;
+                    c=c+k
+                }
+                c=1
+                k=1
+                document.writeln("<br>")
+            }
+        }
+
+        function three(){
+            let c=1;
+            for(let i=1;i<=5;i++){
+                for(let j=1;j<=i;j++){
+                    document.writeln(c)
+                    c++;
+                }
+                document.writeln("<br>")
+            }
+
+        }
+
+        function four(){
+            let f=4;
+            let s=1;
+            for(let i=1;i<=5;i++){
+                for(let j=1;j<=f;j++){
+                document.writeln("&nbsp;&nbsp;") 
+                }
+                for(let j=1;j<=s;j++){
+                    
+
+                    document.writeln("*")
+                }
+                f--;
+                s+=2;
+                document.writeln("<br>")
+            
+            }
+        }
+
+        function five(){
+            let c=15;
+            let a=1;
+            for(let i=1;i<=6;i++){
+                document.writeln(c);
+                c=c-a
+                a++;
+            }
+        }
+
+        function six(){
+             for(let i=1;i<=5;i++){
+            for(let j=1;j<=5;j++){
+                if(i==2 && j>=2){
+                document.writeln("&nbsp;")
+                }else if(i==4 && j<=4){
+                    document.writeln("&nbsp;&nbsp;")
+                }
+                else{
+                    document.writeln("*")
+                }
+            }
+            
+            document.writeln("<br>")
+        }
+        }
+
+        let n = prompt("Enter the pattern Number");
+
+        switch(n){
+            case "1":
+               one()
+                break;
+
+            case "2":
+                two()
+                break; 
+        
+            case "3":
+                three()
+                break; 
+        
+            case "4":
+                four()
+                break;  
+            case "5":
+                five()
+                break; 
+             case "6":
+                six()
+                break;
+            default:
+                document.writeln("Invalid number")
+                break;
+        }
+    </script>
+</body>
+</html>
