@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+
+        let medicine = {
+            name : "paracetamol",
+            type : "Antipyretic",
+            chemicalFormula: "C8H9NO2",
+            brandNames: "Tylenol",
+            dosageForms: "Tablet",
+            typicalDose: "500mg every 4-6 hours",
+            dose1: "4000mg",
+            dose2: "6000mg",
+            dose3: "8000mg",
+            usedfor: "Fever",
+            anotheruse : "Headache",
+            price : 100,
+            discountper: 20,
+
+            finalprice:function(){
+                let desqmount = this.price * this.discountper /100
+                desqmount=this.price - desqmount
+                return "discount price :" + (desqmount)
+            },
+            medicineuses:function(){
+                return "Uses :" + (this.usedfor +","+ this.anotheruse)
+            },
+            tabletdose:function(){
+                return "Dose Types :" + (this.dose1+","+this.dose2+","+this.dose3)
+            }
+
+        }
+
+        //add
+        medicine.maxprice = 300
+
+        //update 
+        medicine.brandNames = "Panadol"
+
+        //delete
+        delete medicine.chemicalFormula
+        console.log(medicine)
+
+        //functions
+        console.log(medicine.finalprice());
+        console.log(medicine.medicineuses());
+        console.log(medicine.tabletdose());
+
+    </script>
+</body>
+</html>

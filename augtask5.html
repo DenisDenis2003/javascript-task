@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // let c=1;
+        // for(let i=1;i<=5;i++){
+        //     for(let j=1;j<=i;j++){
+        //         document.writeln(c);
+        //         c++;
+        //     }
+        //     document.writeln("<br>")
+        // }
+
+
+        // let f=1;
+        // for(let i=1;i<=5;i++){
+        //     f = f * i;
+        // }
+        // document.writeln(f);
+
+
+
+        function one(){
+        let c=1;
+        for(let i=1;i<=5;i++){
+            for(let j=1;j<=i;j++){
+                document.writeln(c);
+                c++;
+            }
+            document.writeln("<br>")
+        }
+        }
+
+
+        function two(){
+        let f=1;
+        for(let i=1;i<=5;i++){
+            f = f * i;
+        }
+        document.writeln(f);
+        }
+        
+
+
+        let n = Number(prompt("Enter the number"));
+        switch(n){
+            case 1 :
+                one()
+                break;
+
+            case 2 : 
+                two()
+                break;
+
+            default :
+                document.writeln("Enter the valid number")
+        }
+    </script>
+</body>
+</html>

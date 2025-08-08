@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let a = "denis@#123"
+        let alphabet = "abcdefghijklmnopqrstuvwxyz"
+        let number ="1234567890"
+
+        let vcount=0;
+        let acount=0;
+        let ncount=0;
+        for(let i=0;i<a.length;i++){
+            if((a[i] == 'e') ||(a[i] == 'i') ||(a[i] == 'a') ||(a[i] == 'o') ||(a[i] == 'u')){
+                vcount++;
+            }
+        }
+        document.writeln("vowels count "+vcount+"<br>");
+        
+
+
+        for(let i=0;i<a.length;i++){
+            for(let j=0;j<alphabet.length;j++){
+                if(a[i]==alphabet[j]){
+                    acount++;
+                }
+            }
+        }
+        document.writeln("alphabet count "+acount+"<br>");
+
+         for(let i=0;i<a.length;i++){
+            for(let j=0;j<number.length;j++){
+                if(a[i]==number[j]){
+                    ncount++;
+                }
+            }
+        }
+        document.writeln("Number count "+ncount+"<br>");
+
+        let scount=a.length - (acount+ncount);
+        document.writeln("Spcharacter count " +scount);
+
+        
+
+    </script>
+</body>
+</html>

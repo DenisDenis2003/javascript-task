@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+        let a = [1000,50000,40000,15000,4000,2000]
+
+
+        document.writeln("Saray more than 15000 are :")
+        document.writeln("<br>")
+
+        for(let i=0;i<a.length;i++){
+            if(a[i]>=15000){
+                document.writeln("Saray more than 15000 index value :" + i + "Salary : " + a[i])
+                document.writeln("<br>")
+
+            }
+        }
+        a.sort();
+        document.writeln("Mininum Salary Value :" + a[0])
+        document.writeln("<br>")
+        document.writeln("Maximum Salary Value :" + a[a.length-1])
+
+
+
+
+
+    </script>
+</body>
+</html>

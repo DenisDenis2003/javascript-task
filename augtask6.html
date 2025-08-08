@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+     
+
+
+          let n = Number(prompt("Enter the number"));
+
+          if(n!=""){
+          if(n>=35){
+            document.writeln("Pass :")
+            if(n >= 90){
+                document.writeln("A+")
+            }else if(n < 90 && n >= 80){
+                document.writeln("A")
+            }else if(n < 80 && n >= 70){
+                document.writeln("B")
+            }else if(n < 70){
+                document.writeln("C")
+            }
+          }else{
+            document.writeln("Fail")
+          }
+        }else{
+            document.writeln("Enter the Mark")
+        }
+
+    
+    </script>
+
+</body>
+</html>
