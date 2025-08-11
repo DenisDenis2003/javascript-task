@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+      let n = 1634
+
+      let temp = n
+
+    // let sum = 0
+    //   while(n>0){
+    //     sum = sum + (n%10)
+    //     n=n/10
+    //   }
+    //   document.writeln(Math.floor(sum))
+
+      
+
+    let c =0;
+    while(n>0){
+        n= Math.floor(n/10)
+        c++
+    }
+    document.writeln(c)
+
+    let sum=0
+    while(temp>0){
+        let digit =temp%10
+        sum = sum + (digit**c)
+        temp=Math.floor(temp/10)
+    }
+    document.writeln(sum)
+    </script>
+</body>
+</html>

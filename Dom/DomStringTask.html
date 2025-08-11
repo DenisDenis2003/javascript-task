@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" id="one" value="denisdar2003@gmail.com">
+
+    <script>
+
+       let n = document.getElementById("one")
+       document.writeln("<br>")
+
+      let str = n.value
+    //   document.writeln(str)
+
+      let alphabet = "abcdefghijklmnopqrstuvwxyz"
+      let number = "1234567890"
+      let spchar = "!@#$%^&*()<>?:]/.,"
+
+      let apcount = 0;
+      let nbcount = 0;
+      let spcount = 0;
+
+      for(let i=0;i<str.length;i++){
+        for(let j=0;j<alphabet.length;j++){
+            if(str[i]==alphabet[j]){
+                apcount++;
+            }
+        }
+      }
+      document.writeln("alphabetic Count :"+apcount);
+      document.writeln("<br>")
+
+      for(let i=0;i<str.length;i++){
+        for(let j=0;j<number.length;j++){
+            if(str[i]==number[j]){
+                nbcount++;
+            }
+        }
+      }
+      document.writeln("Number Count :"+nbcount);
+      document.writeln("<br>")
+
+      for(let i=0;i<str.length;i++){
+        for(let j=0;j<spchar.length;j++){
+            if(str[i]==spchar[j]){
+                spcount++;
+            }
+        }
+      }
+      document.writeln("spcharacter Count :"+spcount);
+      document.writeln("<br>")
+
+    </script>
+</body>
+</html>

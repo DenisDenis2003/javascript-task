@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let a = [10,45,35,10,35,10];
+
+        let b = []
+
+        let c = 0;
+        for(let i =0 ;i<=a.length;i++){
+            for(let j=i+1;j<=a.length;j++){
+                if(a[i]==a[j]){
+                    // a[j]="*"
+                    a.splice(j,j)
+                }
+            }
+        }
+
+        document.writeln(a)
+
+        // for(let i=0;i<a.length;i++){
+        //     if(a[i]!="*"){
+        //         b[i] = a[i]
+        //     }
+        // }
+
+        // document.writeln(b)
+
+
+
+
+    </script>
+</body>
+</html>
